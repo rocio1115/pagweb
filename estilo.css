@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .contenedor {
+    width: 90%;
+    margin: auto;
+  }
+  body {
+    font-family: "Oswald", sans-serif;
+   /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    
+    */
+    background: sandybrown;
+    font-size: 16px;
+    
+  }
+  a{
+    color:black;
+    text-decoration: none;
+  }
+  
+ ul{
+    list-style: none;
+ }
+/*NAVEGADOR*/
+.navegador{
+        font-size: 17px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 20px 0;
+
+    }
+    .imagen-nav{
+      width: 70px;
+    }
+    .navegador ul{
+        /*lo pone uno al lado del otro*/ 
+        display: flex;
+    }
+    .navegador ul li{
+     padding:15px;
+
+    }
+    .navegador ul li a:hover{
+        border-bottom: 4px solid red;
+
+    }
+    /*principal*/
+    hr{
+        margin: 10px 0 ;
+    }
+    .principal{
+        height: 550px;
+        width: 100%;
+        background-image: url(foto.jpg) ;
+        padding-bottom: 50px;
+/*para centrar el texto*/
+     display: flex;
+      flex-direction: column;
+       align-items: center;
+      text-align: center;
+       justify-content: flex-end;
+       color: teal;
+
+    }
+    .btn{
+        cursor: pointer;
+        display: inline-block;
+        border:0;
+        font-weight: bold;
+        padding: 10px 20px;
+        background: #262626;
+        color: white;
+        font-size: 15px;
+        border: 1px solid #fff;
+        margin: 10px 0 ;
+    }
+    .btn:hover{
+
+        opacity: 0.7;
+    }
+    .principal h2,
+    .principal p {
+        margin-bottom: 10px;
+    }
+    /*IMAGENS EN COLUMNA*/
+    .noticias{
+      /* hago las cuatro columnas*/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /*ESPACIADO entre columnas*/
+        gap:25px ;
+        margin:10px 0;
+        
+    }
+    .noticias img{
+    width: 100%;
+     height: 180px;
+
+    }
+
+    .noticias h3{
+font-size: 20px;
+margin: 20px 0;
+
+
+    }
+    .noticias a{
+
+        padding: 10px 0;
+        color: red;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bold;
+    }
+    .noticias a:hover{
+
+        border-bottom: 2px solid red;
+
+    }
+    /*BANNER*/
+    .baner{
+
+     width: 100%;
+     height: 350px;
+    background-image: url(tech-red.jpg);
+      margin-bottom: 40px;
+
+    }
+     .contenido{
+        width: 40%;
+        padding: 90px 0 0 30px;
+        color: seashell;
+
+
+    }
+    /*parte face insta */
+    .social{
+        margin: 50px;
+    }
+    .social p{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+
+
+    }
+    .links{
+display: flex;
+align-items: center;
+justify-content: center;
+
+    }
+    .links a{
+margin:0px 30px;
+
+
+    }
+    .links a i{
+   font-size: 3rem;
+
+    }
+
+    /*FOOTER*/
+
+    .footer{
+
+        background: #2c622c;
+        color: sienna;
+        font-size: 12px;
+        padding: 35px 0;
+    }
+    .contenido2{
+       /* separamos en cuatro columnas*/
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: center;
+
+
+    }
+    .contenido2 ul{
+
+      margin: 0 auto;        
+    }
+
+   .ultimo{
+       background:  #2c622c;
+       color: #616161;
+       font-size: 12px;
+       padding: 20px 0;
+       text-align: center;
+       padding-bottom: 20px;
+
+   }
+   .menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right:30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+}
+   @media(max-width: 700px){
+       body{
+           background: red;
+       }
+       /*boton del navegador cuando cambia pantalla*/
+
+.menu-btn{
+    display: block;
+}
+      
+/*voy a poner que sean dos columnas en lugar de cuatro*/
+.noticias{
+    grid-template-columns: repeat(2,1fr);
+}
+/*para que no se baje el texto del baner*/
+.contenido{
+    width: 80%;
+}
+/*barra de navegacion*/
+
+.navegador ul.menu{
+display: block;
+/*lista a la izq*/
+position: absolute;
+top: 0;
+left: 0;
+background: seagreen;
+/*para que abarque todo alto*/
+height: 100%;
+padding:15px;
+opacity: 0.9;
+/*para que no se vea ,sino q se vea cuando se aprieta boton*/
+transform: translateX(-400px);
+transition: transform .5s ease-in-out;
+
+}
+.navegador ul.menu.show{
+transform: translateX(-20px);
+
+
+}
+.navegador ul.menu li {
+/*separa inicio noticia etc le da espacio entre ellas*/
+padding: 30px;
+
+}
+/*corremos el icono del carrito */
+.navegador .icono{
+    margin-right: 40px;
+
+}
+
+   }
+   
+   
